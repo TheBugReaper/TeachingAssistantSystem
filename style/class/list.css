@@ -1,0 +1,13 @@
+.functional-panel {
+    justify-content: space-between;
+}
+
+.list{
+
+}
+
+.list .row{
+    display:-webkit-flex;
+    display:flex;
+    flex-flow: row;
+}

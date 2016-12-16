@@ -1,0 +1,69 @@
+.button {
+    position:relative;
+    border-style: solid;
+    border-width:0.05rem;
+    box-shadow: 5px 5px 2px hsla(0, 0%, 25%, 0.5);
+    cursor:pointer;
+}
+
+.button:hover {
+    left:-1px;
+    top:-1px;
+}
+
+
+.material *{
+    display: inline-block;
+    width: 80px;
+    margin: auto 20px;
+}
+
+.material.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.material .filename{
+    width:200px;
+}
+
+.material .author,
+.material .date {
+    width:80px;
+}
+
+.material .delete-button{
+    width: 60px;
+    height:20px;
+    line-height: 20px;
+
+    text-align:center;
+    border-radius: 4px;
+}
+
+.row .name {
+    width: 200px;
+    font-size:1.2em;
+    display:table-cell;
+    vertical-align: bottom;
+    color: black;
+}
+
+a.name:before {
+    content:"\00a0";
+    display:inline-block;
+    height:1.5rem;
+    width:1.5rem;
+    margin-left: 0px;
+    margin-right:20px;
+    background-size:100%;
+}
+
+a.name[href$=".docx"]:before,
+a.name[href$=".doc"]:before {
+    background-image: url("../../image/word.jpg");
+}
+
+a.name[href$=".pdf"]:before {
+    background-image: url("../../image/pdf.jpg");
+}
